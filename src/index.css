@@ -1,5 +1,16 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --mainBackground: #ebdcb2;
+  --secondaryBackground: #c9a66b;
+  --mainBlack: #0c0c0c;
+  --mainWhite: #fff;
+  --mainTitle: #662e1c;
+  --secondaryTitle: #1c3666;
+  --secondaryTitleTrans: #662e1c40;
+  --test:#b61d1d;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,3 +24,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Fonts */
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('./base/fonts/RobotoCondensed-Bold.woff') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('./base/fonts/RobotoCondensed-Regular.woff') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
