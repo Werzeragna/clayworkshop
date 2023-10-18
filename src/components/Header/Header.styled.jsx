@@ -40,14 +40,16 @@ export const HeaderLogoLink = styled.a`
 `;
 
 export const HeaderLogoImg = styled.img`
-  height: 90px;
+  
   opacity: 0.9;
   display: none;
 
   @media screen and (min-width: 768px) {
+    height: 50px;
     display: block;
   }
   @media screen and (min-width: 1200px) {
+    height: 90px;
   }
 `;
 
@@ -166,6 +168,7 @@ flex-direction: column;
 export const HeaderMobNav = styled.div`
 display: flex;
 flex-direction: column;
+
 @media screen and (min-width: 768px){
   display: none;
   
@@ -173,11 +176,25 @@ flex-direction: column;
 `;
 
 export const HeaderMobContacts = styled.div`
+
+
+@media screen and (min-width: 768px){
+  display: none;
+  
+}
+`
+
+export const HeaderMobContactsList =styled.ul`
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: row;
-/* position: absolute;
-bottom: 20%;
-left: 50%; */
+@media screen and (min-width: 768px) {
+  display: none;
+}
+`
+export const HeaderMobContact = styled.li`
+
 
 @media screen and (min-width: 768px){
   display: none;

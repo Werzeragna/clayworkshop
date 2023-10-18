@@ -15,44 +15,62 @@ import {
   HeaderMobNav,
   HeaderMobContacts,
   HeaderBurgerMenuBtnToogle,
+  HeaderMobContact,
+  HeaderMobContactsList,
 } from './Header.styled';
 import Logo from '../../img/logo.png';
-import { CiMobile3 , CiInstagram , CiBurger} from 'react-icons/ci';
+import { CiMobile3, CiInstagram, CiBurger, CiMail } from 'react-icons/ci';
+
 const Header = () => {
-  
+
   return (
     <HeaderWrap>
       <HeaderContainer>
-      <HeaderBurgerMenuBtnToogle type="button" data-menu-open-close>
-          <CiBurger/>
+        {/*--------------------- Burger MENU */}
+        <HeaderBurgerMenuBtnToogle type="button" >
+          <CiBurger />
         </HeaderBurgerMenuBtnToogle>
-        <HeaderBurgerMenuIsHidden data-menu>
+        <HeaderBurgerMenuIsHidden>
           <HeaderBurgerMenuIsOpen>
             <HeaderMobNav>
               <HeaderNavList>
-            <HeaderNavItem>
-              <HeaderNavLink href="#"> Home </HeaderNavLink>
-            </HeaderNavItem>
-            <HeaderNavItem>
-              <HeaderNavLink href="#"> About us </HeaderNavLink>
-            </HeaderNavItem>
-            <HeaderNavItem>
-              <HeaderNavLink href="#"> Gallery </HeaderNavLink>
-            </HeaderNavItem>
-            <HeaderNavItem>
-              <HeaderNavLink href="#"> Shop </HeaderNavLink>
-            </HeaderNavItem>
-          </HeaderNavList>
+                <HeaderNavItem>
+                  <HeaderNavLink href="#"> Home </HeaderNavLink>
+                </HeaderNavItem>
+                <HeaderNavItem>
+                  <HeaderNavLink href="#"> About us </HeaderNavLink>
+                </HeaderNavItem>
+                <HeaderNavItem>
+                  <HeaderNavLink href="#"> Gallery </HeaderNavLink>
+                </HeaderNavItem>
+                <HeaderNavItem>
+                  <HeaderNavLink href="#"> Shop </HeaderNavLink>
+                </HeaderNavItem>
+              </HeaderNavList>
             </HeaderMobNav>
             <HeaderMobContacts>
-              <HeaderContactsList>
-          <HeaderMobContacts><HeaderContactLink href='tel:+34567890123'><CiMobile3></CiMobile3></HeaderContactLink></HeaderMobContacts>
-          <HeaderMobContacts><HeaderContactLink href='mailto:clayshop@workshop.io'><CiInstagram></CiInstagram></HeaderContactLink></HeaderMobContacts>
-          <HeaderMobContacts><HeaderContactLink href='https://instagram.com/zola_ceramic_atelier?igshid=MzRlODBiNWFlZA=='><CiInstagram></CiInstagram></HeaderContactLink></HeaderMobContacts>
-        </HeaderContactsList>
+              <HeaderMobContactsList>
+                <HeaderMobContact>
+                  <HeaderContactLink href="tel:+34567890123">
+                    <CiMobile3></CiMobile3>
+                  </HeaderContactLink>
+                </HeaderMobContact>
+                <HeaderMobContact>
+                  <HeaderContactLink href="mailto:clayshop@workshop.io">
+                    <CiMail></CiMail>
+                  </HeaderContactLink>
+                </HeaderMobContact>
+                <HeaderMobContact>
+                  <HeaderContactLink href="https://instagram.com/zola_ceramic_atelier?igshid=MzRlODBiNWFlZA==">
+                    <CiInstagram></CiInstagram>
+                  </HeaderContactLink>
+                </HeaderMobContact>
+              </HeaderMobContactsList>
             </HeaderMobContacts>
           </HeaderBurgerMenuIsOpen>
         </HeaderBurgerMenuIsHidden>
+        {/* --------------------- */}
+        {/*---------------------- Navigation and Contacts---------- */}
         <HeaderNav>
           <HeaderNavList>
             <HeaderNavItem>
@@ -73,10 +91,23 @@ const Header = () => {
           <HeaderLogoImg src={Logo} alt="logo" />
         </HeaderLogoLink>
         <HeaderContactsList>
-          <HeaderContact><HeaderContactLink href='tel:+34567890123'><CiMobile3></CiMobile3></HeaderContactLink></HeaderContact>
-          <HeaderContact><HeaderContactLink href='mailto:clayshop@workshop.io'><CiInstagram></CiInstagram></HeaderContactLink></HeaderContact>
-          <HeaderContact><HeaderContactLink href='https://instagram.com/zola_ceramic_atelier?igshid=MzRlODBiNWFlZA=='><CiInstagram></CiInstagram></HeaderContactLink></HeaderContact>
+          <HeaderContact>
+            <HeaderContactLink href="tel:+34567890123">
+              <CiMobile3></CiMobile3>
+            </HeaderContactLink>
+          </HeaderContact>
+          <HeaderContact>
+            <HeaderContactLink href="mailto:clayshop@workshop.io">
+              <CiMail></CiMail>
+            </HeaderContactLink>
+          </HeaderContact>
+          <HeaderContact>
+            <HeaderContactLink href="https://instagram.com/zola_ceramic_atelier?igshid=MzRlODBiNWFlZA==">
+              <CiInstagram></CiInstagram>
+            </HeaderContactLink>
+          </HeaderContact>
         </HeaderContactsList>
+        {/*  */}
       </HeaderContainer>
     </HeaderWrap>
   );
