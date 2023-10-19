@@ -22,7 +22,7 @@ export const HeaderContainer = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   padding: 5px 12px;
   @media screen and (min-width: 768px) {
